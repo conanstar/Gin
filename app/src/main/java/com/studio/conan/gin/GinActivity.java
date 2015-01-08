@@ -3,6 +3,7 @@ package com.studio.conan.gin;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,7 +31,9 @@ public class GinActivity extends Activity {
             case Gin.LOGIN_TYPE_NOT_LOGIN:
                 break;
             case Gin.LOGIN_TYPE_STAFF:
-                launchStaffMainActivity();
+                if (!TextUtils.isEmpty(application.getPSK())) {
+                    launchStaffMainActivity();
+                }
                 break;
             case Gin.LOGIN_TYPE_EMPLOYEE:
                 launchEmployeeMainActivity();
@@ -51,9 +54,11 @@ public class GinActivity extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_about) {
-            return true;
+        switch (id) {
+            case R.id.action_about:
+                return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
