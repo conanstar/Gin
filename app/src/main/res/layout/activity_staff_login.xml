@@ -31,26 +31,13 @@
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
-                <AutoCompleteTextView
-                    android:id="@+id/email"
-                    android:layout_width="256dip"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dip"
-                    android:hint="@string/prompt_email"
-                    android:inputType="textEmailAddress"
-                    android:imeOptions="actionNext"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:visibility="gone"/>
-
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/psk_code"
                     android:layout_width="256dip"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dip"
-                    android:hint="@string/prompt_password"
+                    android:hint="@string/prompt_psk"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"

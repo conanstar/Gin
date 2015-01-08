@@ -11,7 +11,8 @@ public class Gin extends Application {
     private static Gin sInstance;
     private SharedPreferences mPrefs;
 
-    private static final String PREF_KEY_LOGIN = "flag";  // login flag
+    private static final String PREF_KEY_LOGIN = "flag";    // login flag
+    private static final String PREF_KEY_PSK = "psk";       // PSK code
 
     public static final int LOGIN_TYPE_NOT_LOGIN    = 0;
     public static final int LOGIN_TYPE_STAFF        = 1;
@@ -45,6 +46,16 @@ public class Gin extends Application {
     public void setLoginType(int loginType) {
         SharedPreferences.Editor edit = mPrefs.edit();
         edit.putInt(PREF_KEY_LOGIN, loginType);
+        edit.apply();
+    }
+
+    public String getPSK() {
+        return  mPrefs.getString(PREF_KEY_PSK, null);
+    }
+
+    public void setPSK(String psk) {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putString(PREF_KEY_PSK, psk);
         edit.apply();
     }
 }
