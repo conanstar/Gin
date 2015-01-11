@@ -10,7 +10,6 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -78,6 +77,7 @@ public class StaffMainActivity extends Activity implements TextView.OnEditorActi
         mPreview = new CameraPreview(this, mCamera, previewCB, autoFocusCB);
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
+
     }
 
     @Override
@@ -129,12 +129,6 @@ public class StaffMainActivity extends Activity implements TextView.OnEditorActi
     protected void onPause() {
         super.onPause();
         releaseCamera();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-
     }
 
     public static Camera getCameraInstance() {
@@ -270,7 +264,7 @@ public class StaffMainActivity extends Activity implements TextView.OnEditorActi
 
             // TODO:
 
-            return null;
+            return "Conan";
         }
 
         @Override
