@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dip"
         android:layout_gravity="center"
-        android:text="@string/button_staff"
+        android:text="@string/action_staff"
         android:background="@drawable/custom_button"
         android:onClick="staffLogin"/>
 
@@ -40,7 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dip"
         android:layout_gravity="center"
-        android:text="@string/button_employee"
-        android:background="@drawable/custom_button"/>
+        android:text="@string/action_employee"
+        android:background="@drawable/custom_button"
+        android:onClick="launchEmployeeMain"/>
 
 </LinearLayout>

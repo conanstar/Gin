@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dip"
-                android:hint="@string/button_send"
+                android:hint="@string/action_send"
                 android:background="@drawable/custom_button"
                 android:drawableLeft="@android:drawable/ic_menu_send"
                 android:onClick="checkIn"/>
