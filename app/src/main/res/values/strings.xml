@@ -2,14 +2,31 @@
 <resources>
 
     <string name="app_name">TMSP 2015</string>
-    <string name="title_activity_staff_main">Hello Staff</string>
+
+    <string name="title_activity_staff_main">Staff Zone</string>
     <string name="title_activity_check_in_result">Check In Result</string>
+    <string name="title_activity_employee_main">Employee Zone</string>
+
     <string name="logo_description">Trend Micro Spring Party 2015</string>
-    <string name="button_staff">Staff</string>
-    <string name="button_employee">Employee</string>
-    <string name="button_send">Send</string>
-    <string name="hint_input_psid">Input PSID</string>
+    <string name="qr_description">This is your QR Code</string>
+
+    <string name="action_staff">Staff</string>
+    <string name="action_employee">Employee</string>
+    <string name="action_send">Send</string>
     <string name="action_about">About</string>
     <string name="action_logout">Logout</string>
+    <string name="action_gen_qr">Generate QR Code</string>
+    <string name="action_reset">Reset QR Code</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="hint_input_psid">PS ID</string>
+    <string name="hint_input_sn">Serial Number</string>
+
+    <string name="title_dialog_confirm_send">Are you sure to Send?</string>
+    <string name="message_dialog_confirm_send">Trender: %1$s\nPS ID: %2$d</string>
+
+    <string name="hi_trender">Hi, Trender!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="check_in_failed">Check in Failed!</string>
 
 </resources>

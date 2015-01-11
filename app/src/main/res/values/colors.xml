@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="prize_tag_1">#b5ff1c1c</color>
+    <color name="prize_tag_2">#f3ff9400</color>
+    <color name="prize_tag_3">#f20a81e7</color>
+    <color name="prize_tag_4">#f40fe404</color>
+    <color name="prize_tag_1_selected">#b5590002</color>
+    <color name="prize_tag_2_selected">#f37e4700</color>
+    <color name="prize_tag_3_selected">#f2052366</color>
+    <color name="prize_tag_4_selected">#f4096904</color>
+    <color name="prize_send_button_default">#ff7f7f7f</color>
+</resources>
