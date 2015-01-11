@@ -12,7 +12,7 @@ import android.view.View;
 public class GinActivity extends Activity {
 
     private static final int REQUEST_CODE_STAFF_LOGIN = 0;
-    private static final int REQUEST_CODE_EMPLOYEE_LOGIN = 1;
+//    private static final int REQUEST_CODE_EMPLOYEE_LOGIN = 1;
     private Gin application;
 
     @Override
@@ -35,9 +35,13 @@ public class GinActivity extends Activity {
                     launchStaffMainActivity();
                 }
                 break;
-            case Gin.LOGIN_TYPE_EMPLOYEE:
-                launchEmployeeMainActivity();
-                break;
+//            case Gin.LOGIN_TYPE_EMPLOYEE:
+//                String psid = application.getPSID();
+//                String sn = application.getSN();
+//                if (!TextUtils.isEmpty(psid) && !TextUtils.isEmpty(sn)) {
+//                    launchEmployeeMain();
+//                }
+//                break;
         }
     }
 
@@ -73,12 +77,12 @@ public class GinActivity extends Activity {
                     launchStaffMainActivity();
                 }
                 break;
-            case REQUEST_CODE_EMPLOYEE_LOGIN:
-                if (resultCode == RESULT_OK) {
-                    application.setLoginType(Gin.LOGIN_TYPE_EMPLOYEE);
-                    launchEmployeeMainActivity();
-                }
-                break;
+//            case REQUEST_CODE_EMPLOYEE_LOGIN:
+//                if (resultCode == RESULT_OK) {
+//                    application.setLoginType(Gin.LOGIN_TYPE_EMPLOYEE);
+//                    launchEmployeeMain();
+//                }
+//                break;
         }
     }
 
@@ -88,9 +92,9 @@ public class GinActivity extends Activity {
         finish();
     }
 
-    private void launchEmployeeMainActivity() {
-        //Intent intent = new Intent(this, EmployeeMainActivity.class);
-        //startActivity(intent);
+    public void launchEmployeeMain(View view) {
+        Intent intent = new Intent(this, EmployeeMainActivity.class);
+        startActivity(intent);
     }
 
     public void staffLogin(View view) {
